@@ -1,7 +1,4 @@
 
-
-
-
 #include <unistd.h>
 
 void ft_putchar(char c)
@@ -18,21 +15,26 @@ void rush(int row, int col)
         while(icol <= col)
     {
         {
-            if ((col == 1 && row == 1) || (col == icol && row == 1) || (col == 1 && row == irow) || (col == icol && row = irow))
+            if ((icol == 1 && irow == 1) || (icol == col && irow == 1) || (icol == 1 && irow == row) || (icol == col && irow = row))
             {
                 ft_putchar('o');
             }
-            if ((col != 1 && col != icol) && (row == 1 || row == irow))
+            if ((icol != 1 && icol != col) && (irow == 1 || irow == row))
             {
                 ft_putchar('-');
             }
-            if ((col == 1 && ))
+            if ((icol == 1 || icol == col) && (irow != 1 || irow != row))
+            {
+                ft ft_putchar('|');
+            }
             if (icol == col)
             {
                 icol = 0;
                 write(1, '\n', 2);
             }
+            icol++;
         }
+        irow++;
     }
     
 }
