@@ -10,9 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
-// #include <string.h>
-
 int	ft_str_is_uppercase(char *str)
 {
 	int	count;
